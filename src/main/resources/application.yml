@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/playground
+    hikari:
+      connection-timeout: 30000
+      maximum-pool-size: 10
+      max-lifetime: 1800000
+      pool-name: HikariCP
+      read-only: false
+      connectionTestQuery: SELECT 1
+      driver-class-name: org.postgresql.Driver
+      username: osj4532
+      password: rkskek12
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
